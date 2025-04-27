@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Target modern JS features
+    "module": "NodeNext",                   // ESNext for ES Modules
+    "moduleResolution": "NodeNext",       // Resolve modules like Node.js does
+    "esModuleInterop": true,              // For interop with CommonJS modules
+    "strict": true,                       // Enable strict type-checking
+    "skipLibCheck": true,                 // Skip checking lib files (for speed)
+    "resolveJsonModule": true,            // Allow importing JSON files
+    "outDir": "./dist"                    // Output directory for compiled JS
+  },
+  "include": ["src/**/*.ts"],              // Include all TS files from the src folder
+  "ts-node": {
+    "esm": true,                           // Enable ES Modules support in ts-node
+    "experimentalSpecifierResolution": "node" // Ensure specifier resolution works like Node.js
+  }
+}
